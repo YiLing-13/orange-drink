@@ -1,0 +1,66 @@
+.slider {
+    margin-top: 10rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.sliders {
+    display: flex;
+    gap: 20px;
+    animation: scroll 30s linear infinite;
+}
+
+.slider1 {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background-image: url(../images/sliders/close-up-orange-juice-glass-wooden-table.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.slider2 {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background-image: url(../images/sliders/fresh-orange-juice-drink-bottle-glass.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.slider3 {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background-image: url(../images/sliders/glass-freshly-squeezed-orange-juice-half-orange-female-hands.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.slider4 {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background-image: url(../images/sliders/glass-soft-yellow-drink.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.slider5 {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    background-image: url(../images/sliders/front-view-homemade-orange-juice.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

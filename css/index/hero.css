@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--BGC);
+}
+
+.start_ani {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.start_group {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.start_orange {
+    width: 400px;
+    height: auto;
+}
+
+.start_text {
+    margin-top: 1rem;
+    font-size: 50px;
+    font-family: "Freeman", sans-serif;
+    color: var(--TC1);
+    text-align: center;
+}
+
+.start_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--BGC);
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    font-family: "Noto Sans TC", sans-serif;
+    overflow: hidden;
+}
+
+/* --------------------hero--------------------------------------------------------------------- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: var(--BC1);
+    overflow: visible;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../images/hero/phone/banner1.avif);
+}
+
+.hero_left {
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    width: 500px;
+    height: 300px;
+    color: var(--TC1);
+    z-index: 10;
+
+}
+
+.hero_title {
+    font-family: "Freeman", sans-serif;
+    font-size: 64px;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.hero_title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    width: 500px;
+    height: 3px;
+    background-color: var(--TC1);
+}
+
+.hero_drinkname {
+    font-weight: 700;
+    font-size: var(--FS6);
+}
+
+.hero_content {
+    font-weight: 700;
+    font-size: var(--FS3);
+    margin-top: 1rem;
+}
+
+.hero_btn {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 2rem;
+    background-color: var(--BC3);
+    color: var(--TC1);
+    font-weight: 700;
+    border-radius: 10px 10px 10px 10px;
+    border: 0;
+}
+
+.hero_btn:hover {
+    background-color: var(--BC4);
+}
+
+.hero_right {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 3%;
+    top: 10%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_right img {
+    width: 90%;
+    height: auto;
+    animation: drink 3s ease-in-out infinite;
+}
+
+.drink_wrap {
+    position: relative;
+}
+
+.drink_wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/hero/phone/hero_ellipse.webp);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3000px;
+    height: 180px;
+    /* animation: waveY 5s linear infinite; */
+}
+
+.wave::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/hero/wave2.png);
+    background-size: 1440px 182px;
+    background-repeat: repeat-x;
+    animation: waveX 50s linear infinite;
+}
+
+@keyframes waveX {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-1440px);
+    }
+}
+
+@keyframes drink {
+    0% {
+        scale: 100%;
+    }
+
+    50% {
+        scale: 103%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
+
+/* @keyframes waveY{
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(10px); }
+} */
+
+/* ---------------------------------------------------RWD------------------------------------------------------- */
+@media (max-width:1200px) {
+    .hero_left {
+        width: 400px;
+    }
+
+    .hero_title::before {
+        width: 400px;
+    }
+
+    .hero_right img {
+        /* width: 100%; */
+        min-width: 550px;
+    }
+
+    .hero_right {
+        right: 5%;
+        z-index: 5;
+    }
+
+    .drink_wrap::after {
+        right: -30px;
+        /* background-size: 85%; */
+    }
+}
+
+/* ------------------------------------------------768---------------------------------------------------------------- */
+@media (max-width:768px) {
+    .hero_right {
+        width: 100%;
+        right: 0;
+        top: 10%;
+        z-index: 5;
+    }
+
+    .drink_wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_right img {
+        width: 100vw;
+        max-width: 600px;
+        min-width: 0;
+    }
+
+    .drink_wrap::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+        max-width: 600px;
+    }
+
+    .hero_left {
+        left: 50%;
+        top: 50%;
+        width: min(400px, 90vw);
+        height: 300px;
+        color: var(--TC1);
+        z-index: 10;
+        transform: translate(-50%, -30%);
+        text-align: center;
+    }
+
+    .hero_title::before {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .hero_btn {
+        margin: 2rem auto;
+    }
+
+    .hero_title {
+        font-size: 50px;
+        position: relative;
+        padding-bottom: 2rem;
+    }
+
+    .hero_title::before {
+        width: 300px;
+    }
+
+    .hero_drinkname {
+        font-weight: 700;
+        font-size: var(--FS5);
+    }
+
+    .hero_content {
+        font-weight: 700;
+        font-size: var(--FS2);
+        margin-top: 1rem;
+    }
+
+}

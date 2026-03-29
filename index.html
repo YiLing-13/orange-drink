@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/color_font.css">
+    <link rel="stylesheet" href="css/index/nav.css">
+    <link rel="stylesheet" href="css/index/hero.css">
+    <link rel="stylesheet" href="css/index/featured_drinks.css">
+    <link rel="stylesheet" href="css/index/index_about.css">
+    <link rel="stylesheet" href="css/index/index_store.css">
+    <link rel="stylesheet" href="css/index/sliders.css">
+    <link rel="stylesheet" href="css/index/footer.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/orange.png">
+    <title>好喝橘了 So Good, So Orange</title>
+</head>
+
+<body>
+    <div class="start_ani">
+        <div class="start_group">
+            <video class="start_orange" src="images/loading.webm" alt="" autoplay muted loop playsinline></video>
+        </div>
+        <div class="start_bg"></div>
+    </div>
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html"><div class="nav-logo"></div></a>
+            <ul class="nav_list">
+                <li>
+                    <a href="about.html">
+                        <p class="nav-en">ABOUT</p>
+                        <p class="nav-zh">品牌故事</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="drinks.html">
+                        <p class="nav-en">DRINKS</p>
+                        <p class="nav-zh">飲品介紹</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                        <p class="nav-en">MENU</p>
+                        <p class="nav-zh">線上菜單</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html">
+                        <p class="nav-en">STORE</p>
+                        <p class="nav-zh">門市資訊</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <p class="nav-en">CONTACT</p>
+                        <p class="nav-zh">聯絡我們</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav_list_rwd">
+                <li>
+                    <button id="nav_list_btn"><img src="images/nav/nav_rwd.png" alt=""></button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 手機rwd -->
+    <nav>
+        <div class="nav-inner-rwd" id="nav-rwd">
+            <div class="nav-close">
+                <button id="nav-close"><img src="/images/nav/nav_rwd_close.png" alt=""></button>
+            </div>
+            <ul class="nav-list-rwd">
+                <li>
+                    <a href="about.html">
+                        <p class="nav-zh-rwd">品牌故事　<span class="nav-en-rwd">ABOUT</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="drinks.html">
+                        <p class="nav-zh-rwd">飲品介紹　<span class="nav-en-rwd">DRINKS</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                        <p class="nav-zh-rwd">線上菜單　<span class="nav-en-rwd">MENU</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html">
+                        <p class="nav-zh-rwd">門市資訊　<span class="nav-en-rwd">STORE</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <p class="nav-zh-rwd">聯絡我們　<span class="nav-en-rwd">CONTACT</span></p>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-info-rwd">
+                <div class="info-icon">
+                    <a href="#"><i class="fa-brands fa-square-facebook fa-2xl" style="color: var(--TC1)"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram fa-2xl" style="color: var(--TC1)"></i></a>
+                </div>
+                <div>電話：02-12345678</div>
+                <div>信箱：orangefactory@gmail.com</div>
+                <div>地址：新北市三重區清橙街 12 號</div>
+            </div>
+
+            <div class="wave-rwd"></div>
+
+
+        </div>
+
+    </nav>
+
+    <!-- 內容 -->
+    <div class="container">
+        <!-- hero -->
+        <div class="hero">
+            <div class="hero_left">
+                <div class="hero_title">HAVE A SIP !</div>
+                <div class="hero_drinkname">鮮橙日光冰沙</div>
+                <div class="hero_content">「每一口都是陽光的味道，新鮮現打橙汁搭配沁涼冰沙，清爽又解渴，橘子工廠招牌必喝！每日現榨，天然無添加，讓你喝得到果實的甘甜與活力。」</div>
+                <a class="hero_btn" href="drinks.html">了解更多</a>
+            </div>
+            <div class="hero_right">
+                <div class="drink_wrap">
+                    <img src="images/hero/banner_drink.webp" alt="">
+                </div>
+            </div>
+            <div class="wave"></div>
+        </div>
+
+        <!-- featured-drinks -->
+        <div class="featured-drinks">
+            <div class="featured_left">
+                <button class="left_arrow" id="prev">
+                    <img src="images/featured-drinks/left_arrow_brown.png" alt="">
+                </button>
+                <div class="featured_left_bg">
+                    <img class="mainimg" src="images/featured-drinks/1.webp" alt="">
+                </div>
+                <button class="right_arrow_rwd" id="next_rwd">
+                    <img src="images/featured-drinks/right_arrow_brown.png" alt="">
+                </button>
+            </div>
+            <div class="featured_right">
+                <section>
+                    <div class="featured_right_en">HAVE A SIP</div>
+                    <div class="featured_right_flex">
+                        <div class="featured_right_title">
+                            <div class="title">鮮橙日光冰沙</div>
+                        </div>
+                        <a href="drinks.html" class="featured_right_btn">了解更多</a>
+                    </div>
+                    <div class="featured_right_content">
+                        <div class="content">「每一口都是陽光的味道，新鮮現打橙汁搭配沁涼冰沙，清爽又解渴，橘子工廠招牌必喝！每日現榨，天然無添加，讓你喝得到果實的甘甜與活力。」</div>
+                    </div>
+                    <div class="featured_right_bg">
+                        <div class="right_bg1">
+                            <img src="images/featured-drinks/2.webp" alt="" id="bg1">
+                        </div>
+                        <div class="right_bg2">
+                            <img src="images/featured-drinks/2-1.webp" alt="" id="bg2">
+                        </div>
+                        <div class="right_bg3">
+                            <img src="images/featured-drinks/3.webp" alt="" id="bg3">
+                        </div>
+                        <div class="right_bg4">
+                            <img src="images/featured-drinks/4.webp" alt="" id="bg4">
+                        </div>
+
+                    </div>
+                </section>
+                <button class="right_arrow" id="next">
+                    <img src="images/featured-drinks/right_arrow_brown.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- about -->
+        <div class="about">
+            <div class="star">
+                <div class="about_bg">
+                    <div class="about_text">
+                        <div class="about_title">關於我們</div>
+                        <div class="about_content">
+                            <p>在陽光最剛好的時候，</p>
+                            <p>我們只想做一杯，讓人放慢腳步的飲料。</p>
+                            <p>橘子工廠堅持使用新鮮水果現打，</p>
+                            <p>不添加多餘的負擔，只留下最純粹的果香與清爽。</p>
+                            <p>每一杯，都是我們對日常生活的小小用心。</p>
+                        </div>
+                    </div>
+                    <img class="about_img" src="images/index_about/about2.webp" alt="">
+                    <div class="about_text_rwd">
+                        <div class="about_title">關於我們</div>
+                        <div class="about_content">
+                            <p>在陽光最剛好的時候，</p>
+                            <p>我們只想做一杯，讓人放慢腳步的飲料。</p>
+                            <p>橘子工廠堅持使用新鮮水果現打，</p>
+                            <p>不添加多餘的負擔，只留下最純粹的果香與清爽。</p>
+                            <p>每一杯，都是我們對日常生活的小小用心。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle"></div>
+            <p class="about_bg_text">Taste the Freshness</p>
+        </div>
+
+        <!-- store -->
+        <div class="store">
+            <div style="background-color: var(--BC4); height: 20px;"></div>
+            <div class="store_title">
+                <div class="marquee_track">
+                    <span>門市據點・門市據點・門市據點・</span>
+                    <span>門市據點・門市據點・門市據點・</span>
+                </div>
+            </div>
+            <div class="store_content">
+                <div class="store_img">
+                    <img src="images/index_store/taiwan1.webp" alt="" class="map_img" id="map_img">
+                </div>
+
+                <div class="store_taiwan">TAIWAN</div>
+                <div class="store_store">SHOP</div>
+            </div>
+        </div>
+
+        <!-- slider -->
+        <div class="slider">
+            <div class="sliders">
+                <div class="slider1"></div>
+                <div class="slider2"></div>
+                <div class="slider3"></div>
+                <div class="slider4"></div>
+                <div class="slider5"></div>
+
+                <div class="slider1"></div>
+                <div class="slider2"></div>
+                <div class="slider3"></div>
+                <div class="slider4"></div>
+                <div class="slider5"></div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="orange"><img src="images/orange.png" alt=""></div>
+            <div class="footer_bg">
+                <div class="footer_left">
+                    <div class="footer_logo">
+                        <img src="images/footer_logo.png" alt="">
+                        <a href="#"><i class="fa-brands fa-square-facebook fa-xl" style="color: var(--TC1)"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram fa-xl" style="color: var(--TC1)"></i></a>
+                    </div>
+                    <div>
+                        <div class="footer_content">
+                            <div>電話：　02-12345678</div>
+                            <div>信箱：　orangefactory@gmail.com</div>
+                            <div>地址：　新北市三重區清橙街 12 號</div>
+                        </div>
+                        <div class="Copyright">Copyright © 2026 橘子工廠</div>
+                    </div>
+                </div>
+                <div class="footer_right">
+                    <ul class="footer_list">
+                        <li><a href="about.html">品牌故事</a></li>
+                        <li><a href="drinks.html">飲品介紹</a></li>
+                        <li><a href="menu.html">菜單介紹</a></li>
+                        <li><a href="shop.html">門市資訊</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://kit.fontawesome.com/513e02c78d.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/orange_index.js"></script>
+</body>
+
+</html>

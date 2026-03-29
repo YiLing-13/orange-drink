@@ -1,0 +1,87 @@
+.store {
+    margin-top: 10rem;
+
+}
+
+.store_title {
+    background-color: var(--BC1);
+    height: 150px;
+    font-size: 50px;
+    font-weight: 700;
+    /* padding-left: 5rem; */
+    line-height: 150px;
+    margin-bottom: 5rem;
+    
+}
+
+.marquee_track{
+    white-space: nowrap;
+    opacity: 0.8;
+}
+
+.store_content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.store_img{
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.map_img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-out;
+    transform: rotateY(var(--ry,0deg)) rotateX(var(--rx,0deg));
+}
+
+.store_content::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 110%;
+    height: 110%;
+    transform: translate(-15%, -50%);
+    background-image: url(../images/index_store/taiwan2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.store_taiwan {
+    position: absolute;
+    left: 0;
+    top: -15%;
+    font-size: 25vw;
+    color: var(--TC1);
+    opacity: 10%;
+    z-index: -1;
+    font-family: "Freeman", sans-serif;
+}
+
+.store_store {
+    position: absolute;
+    right: 0;
+    bottom: -15%;
+    font-size: 25vw;
+    color: var(--TC1);
+    opacity: 10%;
+    z-index: -1;
+    font-family: "Freeman", sans-serif;
+}
+
+@media (max-width:768px) {
+    .store {
+        margin-top: 10rem;
+    }
+    .store_title {
+        font-size: 30px;
+    }
+}

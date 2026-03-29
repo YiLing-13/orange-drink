@@ -1,0 +1,155 @@
+footer {
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+}
+
+.footer_bg {
+    margin-top: 5rem;
+    background-color: var(--BC1);
+    width: 100%;
+    height: 280px;
+    display: flex;
+    padding: 2rem 4rem;
+    position: relative;
+    color: var(--TC1);
+}
+
+.orange {
+    position: absolute;
+    right: 50px;
+    top: -150px;
+    z-index: -1;
+}
+
+.orange img {
+    width: 200px;
+}
+
+.footer_bg::before {
+    position: absolute;
+    content: "";
+    bottom: 5rem;
+    left: 4rem;
+    right: 4rem;
+    border: 1px solid var(--TC1);
+}
+
+.footer_left {
+    /* background-color: #9d7979; */
+    width: 40%;
+    height: 140px;
+
+}
+
+.footer_logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer_logo img:first-child {
+    width: 150px;
+    margin-right: 1.5rem;
+}
+
+.footer_logo img {
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.footer_content {
+    margin-top: 1rem;
+}
+
+.footer_content div {
+    margin-bottom: 1rem;
+    font-size: var(--FS2);
+    font-weight: 500;
+}
+
+.Copyright {
+    margin-top: 2.5rem;
+    font-size: var(--FS1);
+}
+
+.footer_right {
+    /* background-color: #c01c1c; */
+    width: 60%;
+    height: 140px;
+}
+
+.footer_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 1rem;
+    font-size: var(--FS3);
+    font-weight: 900;
+    list-style-type: none;
+}
+
+.footer_list li a {
+    text-decoration: none;
+    color: var(--TC1);
+}
+
+.footer_list li a:hover {
+    color: var(--BGC);
+}
+
+
+@media (max-width:992px) {
+    .footer_list {
+        font-size: var(--FS2);
+    }
+}
+
+@media (max-width:768px) {
+    .footer_bg {
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+
+    .footer_left {
+        width: 100%;
+    }
+
+    .footer_right {
+        width: 100%;
+        height: 15px;
+        margin-top: 1rem;
+    }
+
+    .footer_list {
+        justify-content: start;
+        align-items: start;
+        font-size: var(--FS1);
+    }
+
+    .footer_bg::before {
+        bottom: 3.8rem;
+        left: 2rem;
+        right: 2rem;
+        border: 1px solid var(--TC1);
+    }
+
+    .Copyright {
+        margin-top: 3.5rem;
+        font-size: var(--FS1);
+    }
+}
+
+@media (max-width:576px) {
+    .orange {
+        position: absolute;
+        right: 50px;
+        top: -100px;
+        z-index: -1;
+    }
+
+    .orange img {
+        width: 150px;
+    }
+}

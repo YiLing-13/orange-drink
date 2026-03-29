@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--BGC);
+}
+
+.start_ani {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.start_group {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.start_ani img {
+    width: 15%;
+}
+
+.start_text {
+    margin-top: 1rem;
+    font-size: 50px;
+    font-family: "Freeman", sans-serif;
+    color: var(--TC1);
+}
+
+.start_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--BC1);
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    font-family: "Noto Sans TC", sans-serif;
+    overflow: hidden;
+    color: var(--TC1);
+}
+
+.banner {
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/sliders/fresh-orange-juice-drink-bottle-glass.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner_orange {
+    position: absolute;
+    right: -260px;
+    bottom: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.banner_orange img {
+    width: 200px;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3000px;
+    height: 150px;
+    /* animation: waveY 5s linear infinite; */
+}
+
+.wave::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/hero/wave2.png);
+    background-size: 1440px 182px;
+    background-repeat: repeat-x;
+    animation: waveX 50s linear infinite;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5rem 2rem 5rem 3rem;
+    /* 上 右 下 左 */
+    position: relative;
+
+}
+
+
+.marquee_wrap {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    overflow: hidden;
+    font-family: "Freeman", sans-serif;
+    opacity: 10%;
+    transform: rotate(-3deg);
+}
+
+.marquee_track {
+    white-space: nowrap;
+    /* 不允許文字自動換行 */
+    animation: marqueeMove 30s linear infinite;
+    font-weight: 700;
+    font-size: 100px;
+
+}
+
+.marquee_wrap_botton {
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    font-family: "Freeman", sans-serif;
+    opacity: 10%;
+    transform: rotate(5deg);
+}
+
+.marquee_track_botton {
+    white-space: nowrap;
+    /* 不允許文字自動換行 */
+    animation: marqueeMove 30s linear infinite;
+    animation-direction: reverse;
+    font-weight: 700;
+    font-size: 100px;
+
+}
+
+@keyframes marqueeMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.content_left {
+    width: 50%;
+
+}
+
+.content_left img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 5px #828282;
+}
+
+.content_right {
+    width: 50%;
+}
+
+.right_up {
+    width: 100%;
+    display: flex;
+    padding-left: 2rem;
+    gap: 2rem;
+}
+
+.up_left_img {
+    width: 40%;
+    height: 170px;
+    border-radius: 10px 10px 10px 10px;
+    background-image: url(../images/sliders/life3.png);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 2px 2px 5px #828282;
+}
+
+.up_right_img {
+    width: 40%;
+    height: 170px;
+    border-radius: 10px 10px 10px 10px;
+    background-image: url(../images/sliders/about.png);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 2px 2px 5px #828282;
+}
+
+.right_bottom {
+    width: 100%;
+    padding-left: 2rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+@keyframes waveX {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-1440px);
+    }
+}
+
+
+@media (max-width:992px) {
+    .content {
+        flex-direction: column;
+        padding: 5rem 2rem 2rem 2rem;
+    }
+
+    .content_left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content_left img {
+        width: 100%;
+    }
+
+
+
+    .content_right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right_up {
+        width: 100%;
+        padding-left: 0rem;
+        display: none;
+    }
+
+    .right_bottom {
+        width: 100%;
+        padding-left: 0rem;
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:576px) {
+    .banner_orange {
+        position: absolute;
+        right: -160px;
+        bottom: 95px;
+        width: 50%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .banner_orange img {
+        width: 110px;
+    }
+}

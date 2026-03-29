@@ -1,0 +1,32 @@
+# 設計原檔
+*.psd
+*.ai
+*.aep
+*.xd
+*.fig
+*.sketch
+
+# 壓縮檔
+*.zip
+*.rar
+*.7z
+
+# 影片原檔 / 大檔
+*.mov
+*.mp4
+*.avi
+*.mkv
+
+# 自動存檔 / 暫存
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# After Effects / Adobe 自動存檔資料夾
+images/Adobe After Effects Auto-Save/
+
+# 原檔資料夾（如果你不想上傳）
+images/原檔/
+
+images/art-deco-pattern-background-gold/

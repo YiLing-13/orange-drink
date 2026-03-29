@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+:root {
+    --BC1: #FFD358;
+    --BC2: #FFBB00;
+    --BC3: #f0e4c9;
+    --BC4: #daccab;
+    --TC1: #372A14;
+    --BGC: #FFFDF9;
+}
+
+:root {
+    --FS1: 12px;
+    --FS2: 14px;
+    --FS3: 16px;
+    --FS4: 20px;
+    --FS5: 24px;
+    --FS6: 36px;
+}
+

@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: var(--BGC);
+}
+
+.start_ani {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.start_group {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.start_ani img {
+    width: 15%;
+}
+
+.start_text {
+    margin-top: 1rem;
+    font-size: 50px;
+    font-family: "Freeman", sans-serif;
+    color: var(--TC1);
+}
+
+.start_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--BC1);
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    font-family: "Noto Sans TC", sans-serif;
+    overflow: hidden;
+    color: var(--TC1);
+    background-color: var(--BGC);
+}
+
+.banner {
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/sliders/freshly-grown-organic-fresh-orange-juice-interior-house-with-turquoise-blanket-basket-fruit.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner_orange {
+    position: absolute;
+    right: -260px;
+    bottom: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.banner_orange img {
+    width: 200px;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3000px;
+    height: 150px;
+    /* animation: waveY 5s linear infinite; */
+}
+
+.wave::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/hero/wave2.png);
+    background-size: 1440px 182px;
+    background-repeat: repeat-x;
+    animation: waveX 50s linear infinite;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 5rem 0rem 5rem 0rem;
+    /* 上 右 下 左 */
+    position: relative;
+}
+
+.marquee_wrap {
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    overflow: hidden;
+    font-family: "Freeman", sans-serif;
+    opacity: 10%;
+    transform: rotate(-3deg);
+}
+
+.marquee_track {
+    white-space: nowrap;
+    /* 不允許文字自動換行 */
+    animation: marqueeMove 30s linear infinite;
+    font-weight: 700;
+    font-size: 100px;
+
+}
+
+.marquee_wrap_botton {
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    overflow: hidden;
+    z-index: -0.1;
+    font-family: "Freeman", sans-serif;
+    opacity: 10%;
+    transform: rotate(5deg);
+}
+
+.marquee_track_botton {
+    white-space: nowrap;
+    /* 不允許文字自動換行 */
+    animation: marqueeMove 30s linear infinite;
+    animation-direction: reverse;
+    font-weight: 700;
+    font-size: 100px;
+
+}
+
+.button {
+    width: 100%;
+
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    gap: 2rem;
+}
+
+.btn {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    background-color: var(--BC2);
+    color: var(--TC1);
+    font-weight: 700;
+    border-radius: 10px 10px 10px 10px;
+    border: 0;
+}
+
+.btn:hover {
+    background-color: var(--BC1);
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: #a82d2d; */
+    background-image: url(../images/menu/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.menu_bg img {
+    cursor: pointer;
+    width: 80%;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.imgbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.imgbox img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@keyframes waveX {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-1440px);
+    }
+}
+
+
+@keyframes marqueeMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width:576px) {
+    .menu_bg {
+        background-image: none;
+    }
+
+    .menu_bg img {
+        width: 100%;
+        padding: 0rem;
+        margin-top: 0rem;
+    }
+
+    .banner_orange {
+        position: absolute;
+        right: -160px;
+        bottom: 95px;
+        width: 50%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .banner_orange img {
+        width: 110px;
+    }
+}
