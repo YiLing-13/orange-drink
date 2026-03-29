@@ -40,7 +40,7 @@
 }
 
 .nav-logo {
-    background-image: url(../images/nav/logo2.png);
+    background-image: url(../../images/nav/logo2.png);
     width: 200px;
     height: 60px;
     background-size: contain;

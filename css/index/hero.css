@@ -164,7 +164,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(../images/hero/phone/hero_ellipse.webp);
+    background-image: url(../../images/hero/phone/hero_ellipse.webp);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -184,7 +184,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(../images/hero/wave2.png);
+    background-image: url(../../images/hero/wave2.png);
     background-size: 1440px 182px;
     background-repeat: repeat-x;
     animation: waveX 50s linear infinite;
