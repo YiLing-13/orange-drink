@@ -21,28 +21,28 @@ const allshop = {
             area: "新北市",
             tel: "02-29904567",
             address: "新北市新莊區果香路 88 號",
-            img: "/images/shop/shop1.webp",
+            img: "images/shop/shop1.webp",
         },
         {
             shop: "中和晨橙店",
             area: "新北市",
             tel: "02-22436789",
             address: "新北市中和區晨橙街 256 號",
-            img: "/images/shop/shop2.webp",
+            img: "images/shop/shop2.webp",
         },
         {
             shop: "板橋橘光店",
             area: "新北市",
             tel: "02-29681234",
             address: "新北市板橋區橘光路一段 128 號",
-            img: "/images/shop/shop3.webp",
+            img: "images/shop/shop3.webp",
         },
         {
             shop: "新竹橙町店",
             area: "新竹市",
             tel: "03-5312789",
             address: "新竹市東區橙町路 168 號",
-            img: "/images/shop/shop4.webp",
+            img: "images/shop/shop4.webp",
         }
     ],
     center: [
@@ -51,14 +51,14 @@ const allshop = {
             area: "台中市",
             tel: "04-23281234",
             address: "台中市西區日橘路 210 號",
-            img: "/images/shop/shop5.webp",
+            img: "images/shop/shop5.webp",
         },
         {
             shop: "台中果嶼店",
             area: "台中市",
             tel: "04-24305678",
             address: "台中市北屯區果嶼一路 520 號",
-            img: "/images/shop/shop6.webp",
+            img: "images/shop/shop6.webp",
         }
     ],
     south: [
@@ -67,7 +67,7 @@ const allshop = {
             area: "台南市",
             tel: "06-2956789",
             address: "台南市安平區果光路二段 560 號",
-            img: "/images/shop/shop8.webp",
+            img: "images/shop/shop8.webp",
 
         },
         {
@@ -75,21 +75,21 @@ const allshop = {
             area: "台南市",
             tel: "06-2083456",
             address: "台南市東區暖橘街 92 號",
-            img: "/images/shop/shop9.webp",
+            img: "images/shop/shop9.webp",
         },
         {
             shop: "高雄晨果店",
             area: "高雄市",
             tel: "07-2867890",
             address: "高雄市新興區晨果街 115 號",
-            img: "/images/shop/shop10.webp",
+            img: "images/shop/shop10.webp",
         },
         {
             shop: "高雄果嶼店",
             area: "高雄市",
             tel: "07-3384567",
             address: "高雄市苓雅區果嶼路 190 號",
-            img: "/images/shop/shop11.webp",
+            img: "images/shop/shop11.webp",
         }
         ,
         {
@@ -97,7 +97,7 @@ const allshop = {
             area: "高雄市",
             tel: "07-5521345",
             address: "高雄市左營區橘港路 300 號",
-            img: "/images/shop/shop12.webp",
+            img: "images/shop/shop12.webp",
         }
     ]
 }

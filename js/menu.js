@@ -8,9 +8,9 @@ const btn = document.querySelectorAll(".btn");
 
 const menu =
 {
-    north: "/images/menu/north_menu.webp",
-    center: "/images/menu/center_menu.webp",
-    south: "/images/menu/south_menu.webp",
+    north: "images/menu/north_menu.webp",
+    center: "images/menu/center_menu.webp",
+    south: "images/menu/south_menu.webp",
 };
     
 

@@ -33,7 +33,7 @@ startTl
     })
 
     .add(() => {
-        startImg.src = "/images/orange-1.png";
+        startImg.src = "images/orange-1.png";
     }, "-=0.25")
 
     .to(".start_orange", {

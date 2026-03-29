@@ -100,26 +100,26 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // ---------------------slide---------------------------
     const drinks = [
         {
-            img_pc: "/images/featured-drinks/2.webp",
-            img_mobile: "/images/featured-drinks/phone/2.webp",
+            img_pc: "images/featured-drinks/2.webp",
+            img_mobile: "images/featured-drinks/phone/2.webp",
             name: "橙香氣泡飲",
             content: "「輕盈氣泡包裹著清新橙香，帶來滿滿清新能量！嚴選新鮮橙汁調製，無負擔的微甜氣泡，讓每一口都充滿活力與驚喜。」"
         },
         {
-            img_pc: "/images/featured-drinks/3.webp",
-            img_mobile: "/images/featured-drinks/phone/3.webp",
+            img_pc: "images/featured-drinks/3.webp",
+            img_mobile: "images/featured-drinks/phone/3.webp",
             name: "果粒橙飲",
             content: "「真實果粒與鮮榨橙汁完美結合，每一口都喝得到自然果肉的口感與甘甜，層次豐富又滿足！」"
         },
         {
-            img_pc: "/images/featured-drinks/2-1.webp",
-            img_mobile: "/images/featured-drinks/phone/2-1.webp",
+            img_pc: "images/featured-drinks/2-1.webp",
+            img_mobile: "images/featured-drinks/phone/2-1.webp",
             name: "橙果冰茶",
             content: "「清香茶韻融合自然橙香，帶出細緻層次的絕妙平衡！嚴選茶葉與新鮮果汁調配，讓你在每一口中感受清新與果香交織的美好。」"
         },
         {
-            img_pc: "/images/featured-drinks/6.webp",
-            img_mobile: "/images/featured-drinks/phone/6.webp",
+            img_pc: "images/featured-drinks/6.webp",
+            img_mobile: "images/featured-drinks/phone/6.webp",
             name: "柳橙冰茶",
             content: "「以清爽茶底結合鮮橙果香與蜂蜜甜韻。每一口都帶來自然果香與沁涼茶感，讓日常多一點輕柔療癒。」"
         }
