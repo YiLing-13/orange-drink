@@ -121,7 +121,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(../images/nav/wave2.png);
+    background-image: url(../../images/nav/wave2.png);
     background-size: 765px 182px;
     background-repeat: repeat-x;
     animation: waveX-rwd 50s linear infinite;
