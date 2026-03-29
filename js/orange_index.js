@@ -1,17 +1,4 @@
-gsap.fromTo(".banner_orange img", { x: 0 }, {
-    x: () => -window.innerWidth - 250,
-    duration: 40,
-    repeat: -1,
-    ease: "none"
-})
 
-gsap.fromTo(".banner_orange img", { rotate: 0, y: 0 }, {
-    rotate: 45,
-    y: -10,
-    duration: 2,
-    repeat: -1,
-    yoyo: true
-})
 
 gsap.fromTo(".orange", { rotate: 0, y: 0 }, {
     y: -10,
