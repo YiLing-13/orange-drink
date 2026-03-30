@@ -307,6 +307,10 @@ hr {
     transition: 1s;
 }
 
+.small_text{
+    display: none;
+}
+
 @keyframes waveX {
     from {
         transform: translateX(0);
@@ -407,9 +411,21 @@ hr {
     .banner_orange img {
         width: 110px;
     }
+
+    .small_text {
+        display: block;
+        text-align: center;
+        color: var(--TC1);
+        font-size: var(--FS1);
+        opacity: 0.5;
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width:470px) {
+
+
+
     .button_area.isStartNorth {
         flex-wrap: nowrap;
         overflow-x: auto;

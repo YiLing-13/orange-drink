@@ -202,6 +202,14 @@
     margin-top: 1rem;
 }
 
+.small_text{
+    text-align: center;
+    color: var(--TC1);
+    font-size: var(--FS1);
+    opacity: 0.5;
+    margin-top: 1rem;
+}
+
 .imgbox {
     position: fixed;
     inset: 0;
